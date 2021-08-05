@@ -88,4 +88,20 @@ if( state1 == state2){
 
 let text1 = "text 1 is ";
 text1 += "added to text 2";
-console.log(text1);
+
+function test(){ //functions in JS return undefined by default unless i add return
+
+}
+
+
+let object1 = {
+    a: 'a parameter',
+    b: 'b'
+};
+
+let car = new Object();
+car.speed = 2;
+
+let car2 ={
+    speed: 2
+};
