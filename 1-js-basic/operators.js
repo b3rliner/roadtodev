@@ -1,6 +1,17 @@
 let number1 = 5;
 let number2 = 35;
 console.log(number1 + number2);
+console.log(number1 + number2++); //++ dont work, why?
+
+par1 = 2;
+par2 = 4;
+function add(par1, par2){
+    let sum = par1 + par2;
+    console.log(sum);
+}
+add(par1, par2);
+
+
 
 let number3 = 5;
 let number4 = 35;
@@ -65,3 +76,16 @@ if( state1 == state2){
 }else{
     console.log('state1 not equal state2')
 }
+
+
+let state3 = 4;
+let state4 = 6;
+if( state1 == state2){
+    console.log('state1 equal state2') //now I know why there was a = b ^^ because i used one '=' character
+}else{
+    console.log('state1 not equal state2')
+}
+
+let text1 = "text 1 is ";
+text1 += "added to text 2";
+console.log(text1);
