@@ -1,0 +1,98 @@
+*{ /* * - global selector*/
+    
+}
+
+.exercise1{
+    width: 100px;
+    height: 100px;
+    color: blue;
+}
+
+.exercise2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.exercise3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 43, 122);;
+}
+
+.boxmodel1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.boxcontent{
+    display: block;
+    background-color: blue;
+}
+
+.boxmodel2{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.boxmodel3{
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+.border1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.border2{
+    width: 100px;
+    height: 100px;
+    border: 2px dotted black;
+}
+.border3{
+    width: 100px;
+    height: 100px;
+    border: 2px dashed black;
+}
+.border4{
+    width: 100px;
+    height: 100px;
+    border: 2px double black;
+}
+.border5{
+    width: 100px;
+    height: 100px;
+    border: 2px double black;
+}
+.border6{
+    width: 100px;
+    height: 100px;
+    border: 2px ridge black;
+    border-left-width: 6px; 
+}
+.border7{
+    width: 100px;
+    height: 100px;
+    border: 2px inset black;
+}
+.border8{
+    width: 100px;
+    height: 100px;
+    border: 2px outset black;
+}
+.border9{
+    width: 100px;
+    height: 100px;
+    border: 2px black;
+    border-style: dotted dashed solid double;
+}
+

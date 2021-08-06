@@ -1,26 +1,125 @@
-// only 'a' - value not assigned to the variable, error 'a' is not defined
+//only 'a' - value not assigned to the variable, error: 'a' is not defined
 
-b = 1; //variable becomes global with value 1
+b = 1; //undefined variable with assigned value 1 (implied global) becomes global
 
-let c = 1; //block range
+let c = 1; //variable c with value 1, let = block range
 
+//block range exercise
 
-function checkrange1(){
+function blockrange1(){
     for(let l1 = 1; l1 < 3; l1++){
-        console.log('test');
+        console.log('test'); //returns test x2
     }
-    console.log(l1); //not defined because l1 has block range
+    console.log(l1); //returns not defined because l1 has block range
+}//function stucks on console log with undefined error
+
+function blockrange2(){
+    for(let l1 = 1; l1 < 3; l1++){
+        console.log('test'); //returns test x2
+    }
+    return console.log(l1); //returns undefined error
+} //function stucks on console log with undefined error
+
+function blockrange3(){
+    for(let l1 = 1; l1 < 3; l1++){
+        console.log('test'); //returns test x2
+    }
+    console.log(l1); //undefined error
+    return 2; //function returns 2 but stuck on undefined error
 }
 
 var d = 1; //function range
 
-function checkrange2(){
+
+function functionrange1(){
+    for(var l1 = 1; l1 < 3; l1++){
+        console.log('test'); //returns test x2
+    }
+    return console.log(l1); //returns 3
+} //function returns undefined
+
+function functionrange2(){
     for(var l1 = 1; l1 < 3; l1++){
         console.log('test');
     }
-    console.log(l1); //not defined because l1 has block range
+    console.log(l1);
+}
+function functionrange3(){
+    for(var l1 = 1; l1 < 3; l1++){
+        console.log('test');
+    }
+    return 2; // function returns 2
 }
 
+function functionrange4(){
+    for(var l1 = 1; l1 < 3; l1++){
+        console.log('test');
+    }
+    return console.log('test'); // function returns undefined
+}
+
+//check what function returns
+
+
+function rtrn1(){
+
+};//returns undefined
+
+function rtrn2(){
+    console.log('1');
+};//returns undefined
+
+function rtrn3(){
+    return console.log('1'); //is executed forward console.log with return 1
+}; //and function return undefined
+
+function rtrn4(){
+    return 1;
+};//returns 1
+
+function rtrn5(){
+    return null;
+};//returns null
+
+function rtrn6(){
+    return true;
+};//returns true
+
+function rtrn7(){
+    return false;
+};
+
+function rtrn8(){
+    return true;
+    return false; //not executed
+};//returns true
+
+function rtrn9(){
+    return false;
+    return true; //not executed
+};//returns false
+
+function rtrn10(){
+    return a + b;
+};//returns error a is not defined
+
+function rtrn11(){
+    return let /*a*/ + b;
+};//error unexpected indentifier
+
+function rtrn12(){
+    let a = 2;
+    let b = 4;
+    return a + b;
+};//returns 6
+
+function rtrn13(){
+    return 'sample return';
+};//returns "sample return"
+
+function rtrn14(){
+    return Math.PI;
+};//returns 3.14...
 
 //hoisting
 
@@ -59,8 +158,6 @@ function hoistingcheck5(){
 const e = 1; //constant variable
 
 
-
-
 console.log('Test log'); //console returns log
 console.log(window); //console returns window object
 console.log(alert()); //console returns alert in console log - why it works?
@@ -68,10 +165,3 @@ console.log(alert(`test`));
 
 console.log('hello world');
 
-let changehtml1 = document.querySelector('body');
-changehtml1.textContent = 'test'; // text/plain
-
-let changehtml2 = document.querySelector('body');
-changehtml2.concat('changehtml1'); // text/html add test2 to test
-
-//append vs concat 

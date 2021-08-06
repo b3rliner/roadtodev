@@ -51,8 +51,6 @@ if(a = b){
 
 if(a = b){
     console.log(`${a} is equal ${b}`); 
-    /*returns a in string format, why b = 4?, 'if' is a conditional operator, 
-    why it changes the value of b? */
 }
 
 console.log(parseInt(`${a} is equal ${b}`)); 
