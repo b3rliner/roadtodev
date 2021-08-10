@@ -1,0 +1,57 @@
+main{
+    padding-top: 32px;
+}
+
+
+.package{
+    background: lightgreen;
+    padding: 32px;
+    width: 80%;
+    margin: 20px 0px;
+    border: 4px solid black;
+}
+
+.plan__title{
+    color: black;
+
+    
+}
+.package a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+    padding: 32px;
+}
+
+.package__subtitle{
+    color: grey;
+}
+
+.package__description{
+    border: 2px solid black;
+    background: white;
+}
+
+#plus{
+    background: green;
+}
+
+#free{
+    background: lightskyblue;
+    float: right;
+}
+
+#premium{
+    background: lightseagreen;
+}
+
+.package:hover,
+.package:active{
+    border: 4px solid aqua;
+}
+
+
+.clearfix{
+    clear: both;
+}
